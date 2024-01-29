@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Play</title>
+    <link rel="icon" href="breadddd.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Second Place</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="reasons.html">Why Bread?</a>
+
+    </nav>
+
+    <div id="click-container" onclick="playAudio()">
+        <img src="Chocolate-Overload-Brownies-9.jpeg" alt="Click to Play">
+        <audio id="audio" controls>
+            <source src="sound.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
